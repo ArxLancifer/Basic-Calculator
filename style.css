@@ -1,0 +1,84 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 
+*, *:before, *:after {
+box-sizing:inherit;
+}
+*/
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+html {
+  font-family: 'Orbitron', sans-serif;
+}
+.board {
+  background-color: rgb(43, 43, 43);
+  width: 600px;
+  height: 700px;
+  margin: 10% auto;
+  padding: 6% 0;
+  border-radius: 3px;
+}
+
+.oparation_window{
+  position: relative;
+  background-color: #fff;
+  width: 80%;
+  height: 25%;
+  border-radius: 3px;
+  margin: 0 auto;
+  
+}
+.currentCalculation {
+position: absolute;
+/* width: 95%; */
+/* direction: rtl; */
+right: 10px;
+bottom: 10px;
+font-size: 1.4rem;
+overflow-wrap: break-word;
+}
+.lastCalculation {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 1.4rem;
+}
+.allButtons {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 5%;
+  justify-content: space-between;
+}
+
+.btnNum, .proccess, .btnOper,.btnDot {
+  background-color: #fff;
+  width: 60px;
+  height: 60px;
+  margin: 20px;
+  text-align: center;
+  line-height: 60px;
+  border-radius: 50%;
+  font-size: 2rem;
+  font-weight: 800;
+  cursor: pointer;
+}
